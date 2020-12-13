@@ -1,7 +1,7 @@
 WYSIMD (for MS Teams) - 0.1 ALPHA
 =================================
 
-<img src="https://raw.githubusercontent.com/attilammagyar/wysimd/master/wysimd.gif" height="420" />
+<img src="https://raw.githubusercontent.com/attilammagyar/wysimd/master/wysimd.gif" alt="screen demo video showing the editor with instant formatting turned off" />
 
 [Greasemonkey](https://www.greasespot.net/) /
 [Tampermonkey](https://www.tampermonkey.net/) user script to turn off the

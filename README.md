@@ -63,7 +63,7 @@ Features
 
  * **Non-intrusive**: it tries not to interfere with all the whistles and bells
    Teams can do, like mentions, badges, cards, etc. And you can still use the
-   usual keyboard shortcuts like `Ctrl+B` or `Ctrl+I` to format the selected
+   usual keyboard shortcuts like `Ctrl+B` or `Ctrl+I` to format any selected
    text, etc. If you go back to edit an already formatted message, WYSIMD will
    try to keep the already formatted parts.
 
@@ -77,17 +77,17 @@ Quirks
  * **Auto-resizing, emoji selector**: in order to prevent Teams from doing its
    premature formatting, WYSIMD needs to temporarily disable some event
    handlers of the editor widget when a Markdown key on the keyboard is
-   pressed. Unfortunately, this might interfere sometimes with Teams capability
-   to grow the editor widget as its content gets longer, or to remove some of
-   the characters from the editor that are typed while the emoji selector is
-   visible.
+   pressed. Unfortunately, this might interfere sometimes with Teams'
+   capability to grow the editor widget as its content gets longer, or to
+   remove some of the characters from the editor that are typed while the emoji
+   selector is visible.
 
  * **Lists**: though WYSIMD disables the automatic formatting of ordered and
-   unordered lists (lines which start with `1. ` or `- `), it doesn't provide a
-   Markdown alternative, so you have to type in your bulletpoints and numbers
-   one by one. However, this has the advantage that when the resulting
-   formatted text is copied into a plain text document, the numbers and the
-   bulletpoints won't be replaced by tabs.
+   unordered lists (lines which start with "`1. `" or "`- `"), it doesn't
+   provide a Markdown alternative, so you have to type your bulletpoints and
+   numbers one by one manually. However, this has the advantage that when the
+   resulting formatted text is copied and pasted into a plain text document,
+   the numbers and the bulletpoints won't be replaced with tabs.
 
 Syntax
 ------
@@ -170,9 +170,9 @@ an [online data URL image converter](https://ezgif.com/image-to-datauri).
 
 Though some message extensions that seem to be built into Teams can come with
 several kilobytes of HTML and SVG data, I don't recommend putting huge images
-and animations as data URLs into messages and using them excessively. It's a
+and animations as data URLs into the script and using them excessively. It's a
 good idea to resize your custom emojis to about 20x20 pixels (Teams' own emojis
 are this size when they are embedded in text), and to avoid animations or at
 least to lower their framerate, and to reduce the color palette of GIFs. Even
-just a few big custom emojis can make a message so big that Teams' won't let
+just a few big custom emojis can make a message so big that Teams won't let
 you send it.

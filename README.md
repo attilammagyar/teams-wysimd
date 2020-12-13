@@ -19,13 +19,14 @@ This script is probably very fragile, it might break in unexpected ways with
 and I'm not sure how much time I can afford to keep it working or how soon I
 can get it to work again if it breaks. Also, I don't use Teams very
 extensively, so I might not even notice if this script interferes with some
-message extension that might be essential for some people.
+feature or message extension that might be essential for some people. Use it at
+your own risk.
 
 Installing
 ----------
 
 1. If you use Firefox, install the [Greasemonkey](https://www.greasespot.net/)
-   extension to Firefox, or if you use Chrome, install the
+   extension, or if you use Chrome, install the
    [Tampermonkey](https://www.tampermonkey.net/) extension.
 2. Add [wysimd.user.js](https://github.com/attilammagyar/wysimd/raw/main/wysimd.user.js)
    as a new user script.
@@ -48,7 +49,7 @@ Features
 
  * **ON/OFF switch**: (bottom right corner) while WYSIMD can be useful in a
    chat window or for team posts (where the Enter key sends the message), it
-   can mess up the editor's behaviour in the Wiki tab and in the calendar, and
+   can mess up the editor's behaviour in the Wiki tab and in the Calendar, and
    I couldn't figure out yet how to detect those cases. But even if I did, one
    might still want to temporarily turn off this thing for one reason or
    another. And if the switch gets in the way, just keep the mouse over it, and
@@ -119,7 +120,7 @@ Syntax
        code block anywhere: ```
        if (1 + 1 === 2) {
            console.log("Hello World");
-       }```
+       }``` another 3 backticks close it
 
  * **Custom emoji**
 

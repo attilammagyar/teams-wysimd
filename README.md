@@ -1,5 +1,5 @@
-WYSIMD (for MS Teams) - 0.1 ALPHA
-=================================
+WYSIMD (for MS Teams) - 0.11 ALPHA
+==================================
 
 <img src="https://raw.githubusercontent.com/attilammagyar/wysimd/master/wysimd.gif" alt="screen demo video showing the editor with instant formatting turned off" />
 
@@ -49,9 +49,10 @@ Features
  * **ON/OFF switch**: (bottom right corner) while WYSIMD can be useful in a
    chat window or for team posts (where the Enter key sends the message), it
    can mess up the editor's behaviour in the Wiki tab and in the calendar, and
-   I couldn't figure out yet how to detect those cases automatically. But even
-   if I did, one might still want to temporarily turn off this thing for one
-   reason or another.
+   I couldn't figure out yet how to detect those cases. But even if I did, one
+   might still want to temporarily turn off this thing for one reason or
+   another. And if the switch gets in the way, just keep the mouse over it, and
+   after a few seconds, it will disappear for a moment.
 
  * **Custom emojis**: though it doesn't allow
    [custom reaction emojis](https://microsoftteams.uservoice.com/forums/555103-public/suggestions/16934329-allow-adding-custom-emoji-memes-gifs-reactions),

@@ -941,14 +941,29 @@ function WYSIMD()
 
     function initialize_settings()
     {
+        function reset_hiding_timeout()
+        {
+            if (hiding_timeout !== null) {
+                clearTimeout(hiding_timeout);
+                hiding_timeout = null;
+            }
+        }
+
+        function stop_hiding()
+        {
+            div.style.bottom = "5px";
+            reset_hiding_timeout();
+        }
+
         var div = document.createElement("div"),
-            a = document.createElement("a");
+            a = document.createElement("a"),
+            hiding_timeout = null;
 
         div.style.position = "fixed";
         div.style.zIndex = "10000";
         div.style.opacity = "1";
-        div.style.right = "3px";
-        div.style.bottom = "3px";
+        div.style.right = "5px";
+        div.style.bottom = "5px";
         div.style.margin = "0";
         div.style.padding = "5px";
         div.style.border = "outset 2px #6264a7";
@@ -956,6 +971,35 @@ function WYSIMD()
         div.style.background = "#6264a7";
         div.style.display = "block";
         div.style.cursor = "pointer";
+        div.style.width = "auto";
+        div.style.height = "auto";
+        div.style.minHeight = "20px";
+        div.style.transition = "bottom 0.3s ease-in-out";
+
+        div.addEventListener(
+            "mouseover",
+            function ()
+            {
+                hiding_timeout = setTimeout(
+                    function ()
+                    {
+                        if (hiding_timeout !== null) {
+                            div.style.bottom = "-28px";
+                            hiding_timeout = null;
+                        }
+                    },
+                    1600
+                );
+            }
+        );
+        div.addEventListener(
+            "mouseleave",
+            function ()
+            {
+                reset_hiding_timeout();
+                setTimeout(stop_hiding, 4100);
+            }
+        );
 
         a.style.position = "auto";
         a.style.zIndex = "10000";
@@ -966,9 +1010,10 @@ function WYSIMD()
         a.style.background = "#6264a7";
         a.style.color = "#fff";
         a.style.fontFamily = "sans-serif";
-        a.style.fontSize = "14px";
+        a.style.fontSize = "12px";
         a.style.fontWeight = "normal";
-        a.style.lineHeight = "auto";
+        a.style.lineHeight = "20px";
+        a.style.height = "20px";
         a.style.display = "inlnie";
         a.style.textDecoration = "none";
 
@@ -986,6 +1031,7 @@ function WYSIMD()
 
                 evt.stopPropagation();
                 evt.preventDefault();
+                stop_hiding();
             }
         );
 

@@ -131,15 +131,16 @@ Custom Emojis
 
 WYSIMD comes with 3 built-in emojis:
 
- * `:pf:` is a pinched-fingers emoji from [OpenMoji](https://openmoji.org/) -
-   the open-source emoji and icon project. License:
+ * `:pf:` is a [pinched-fingers](https://openmoji.org/library/#emoji=1F90C)
+   emoji from [OpenMoji](https://openmoji.org/) - the open-source emoji and
+   icon project. License:
    [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/#)
 
    Note that withot WYSIMD, Teams would convert it into a
    [face-with-tongue](https://emojipedia.org/face-with-tongue/) emoji as soon
    as you type `:p`.
 
- * `:pm:` and `:spinner:` are loading-animations generated at
+ * `:pm:` and `:spinner:` are loading-animations generated with
    [Ajaxload](http://www.ajaxload.info/).
    License: [WTFPL](http://www.wtfpl.net/)
 

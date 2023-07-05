@@ -1,7 +1,7 @@
 WYSIMD (for MS Teams) - 0.11 ALPHA
 ==================================
 
-<img src="https://raw.githubusercontent.com/attilammagyar/wysimd/master/wysimd.gif" alt="screen demo video showing the editor with instant formatting turned off" />
+<img src="https://raw.githubusercontent.com/attilammagyar/teams-wysimd/master/teams-wysimd.gif" alt="screen demo video showing the editor with instant formatting turned off" />
 
 [Greasemonkey](https://www.greasespot.net/) /
 [Tampermonkey](https://www.tampermonkey.net/) user script to turn off the
@@ -28,7 +28,7 @@ Installing
 1. If you use Firefox, install the [Greasemonkey](https://www.greasespot.net/)
    extension, or if you use Chrome, install the
    [Tampermonkey](https://www.tampermonkey.net/) extension.
-2. Add [wysimd.user.js](https://github.com/attilammagyar/wysimd/raw/main/wysimd.user.js)
+2. Add [teams-wysimd.user.js](https://github.com/attilammagyar/teams-wysimd/raw/main/teams-wysimd.user.js)
    as a new user script.
 
 Why?
